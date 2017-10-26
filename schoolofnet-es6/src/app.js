@@ -28,3 +28,16 @@ var peter = {
 	}
 }
 peter.printFriends();
+
+// Classes
+class Color {
+	constructor(codeColor, nameColor) {
+		this.codeColor = codeColor;
+		this.nameColor = nameColor;
+	}
+	getColor() {
+		return {codeColor: this.codeColor, nameColor: this.nameColor};
+	}
+}
+var color = new Color('red', 'Red');
+console.log(color.getColor());
